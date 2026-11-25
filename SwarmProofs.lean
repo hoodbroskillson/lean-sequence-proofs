@@ -2,6 +2,7 @@ import SwarmProofs.A024219
 import SwarmProofs.A024220
 import SwarmProofs.DigitWord
 import Mathlib
+import SwarmProofs.A193654
 import SwarmProofs.A208355
 import SwarmProofs.A208101
 import SwarmProofs.A286282
