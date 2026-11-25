@@ -18,6 +18,7 @@ import SwarmProofs.ErdosMoserThree
 import SwarmProofs.ErdosMoserSquarefree
 import SwarmProofs.SternDyadic
 import SwarmProofs.SternResidues
+import SwarmProofs.SternClassification
 
 /- The A027171 diagonal of the A027170 binomial triangle, in integer arithmetic.
    Source: https://oeis.org/A027171 and https://oeis.org/A027170 -/

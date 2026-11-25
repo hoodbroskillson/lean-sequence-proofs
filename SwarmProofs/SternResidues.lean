@@ -5,7 +5,7 @@ in [0, 2^r) are divisible by 22 and by 27 for every r. See the paragraph after
 (15) in https://cs.uwaterloo.ca/journals/JIS/VOL11/Reznick/reznick4.pdf.
 
 A pair (a,b) of consecutive terms has children (a,a+b) and (a+b,b).
-The two tables color the residue pairs for both moduli with a common set of
+The tables color the residue pairs for the moduli in (15) and its conjecture with a common set of
 colors. Each color determines whether the first residue is zero and the unordered
 pair of child colors. The kernel checks every table entry against these rules.
 Starting with the first-residue-zero test and repeatedly splitting colors
@@ -86,15 +86,61 @@ private def colors27 : Array Nat := #[
   4, 15, 16, 11, 15, 10, 11, 14, 10, 13, 9, 12, 8, 9, 10, 8, 14, 10, 13, 9, 12, 7, 9, 6, 7, 5, 6,
   4, 16, 15, 11, 10, 9, 8, 10, 14, 13, 12, 9, 7, 6, 15, 11, 10, 14, 13, 12, 9, 8, 10, 9, 7, 6, 5]
 
+private def colors4 : Array Nat := #[
+  0, 29, 3, 29,
+  30, 31, 32, 33,
+  23, 32, 24, 32,
+  30, 33, 32, 31]
+
+private def colors5 : Array Nat := #[
+  0, 29, 29, 29, 29,
+  30, 31, 32, 32, 33,
+  30, 32, 31, 33, 32,
+  30, 32, 33, 31, 32,
+  30, 33, 32, 32, 31]
+
+private def colors6 : Array Nat := #[
+  0, 2, 25, 3, 25, 2,
+  17, 18, 19, 20, 21, 22,
+  26, 19, 27, 20, 28, 21,
+  23, 20, 20, 24, 20, 20,
+  26, 21, 28, 20, 27, 19,
+  17, 22, 21, 20, 19, 18]
+
+private def colors9 : Array Nat := #[
+  0, 2, 2, 25, 2, 2, 25, 2, 2,
+  17, 18, 19, 20, 21, 19, 20, 21, 22,
+  17, 19, 18, 20, 19, 21, 20, 22, 21,
+  26, 20, 20, 27, 20, 20, 28, 20, 20,
+  17, 21, 19, 20, 18, 22, 20, 21, 19,
+  17, 19, 21, 20, 22, 18, 20, 19, 21,
+  26, 20, 20, 28, 20, 20, 27, 20, 20,
+  17, 21, 22, 20, 21, 19, 20, 18, 19,
+  17, 22, 21, 20, 19, 21, 20, 19, 18]
+
+private def colors11 : Array Nat := #[
+  0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+  17, 18, 19, 20, 20, 21, 19, 20, 20, 21, 22,
+  17, 19, 18, 20, 19, 20, 20, 21, 20, 22, 21,
+  17, 20, 20, 18, 21, 21, 19, 19, 22, 20, 20,
+  17, 20, 19, 21, 18, 20, 20, 22, 19, 21, 20,
+  17, 21, 20, 21, 20, 18, 22, 20, 19, 20, 19,
+  17, 19, 20, 19, 20, 22, 18, 20, 21, 20, 21,
+  17, 20, 21, 19, 22, 20, 20, 18, 21, 19, 20,
+  17, 20, 20, 22, 19, 19, 21, 21, 18, 20, 20,
+  17, 21, 22, 20, 21, 20, 20, 19, 20, 18, 19,
+  17, 22, 21, 20, 20, 19, 21, 20, 20, 19, 18]
+
 -- A color is accepting when the first component of its residue pairs is zero.
-private def accepts (k : Nat) : Bool := k == 0 || k == 1 || k == 2 || k == 3 || k == 25
+private def accepts (k : Nat) : Bool := k == 0 || k == 1 || k == 2 || k == 3 || k == 25 || k == 29
 
 private def children : Array (Nat × Nat) := #[
   (0, 0), (1, 5), (2, 18), (3, 24), (4, 5), (6, 6),
   (7, 7), (8, 9), (9, 11), (10, 12), (8, 11), (7, 15),
   (13, 13), (13, 14), (10, 10), (6, 16), (1, 4), (17, 18),
   (19, 19), (20, 20), (20, 21), (19, 22), (2, 17), (23, 24),
-  (3, 23), (25, 27), (26, 27), (28, 28), (25, 26)]
+  (3, 23), (25, 27), (26, 27), (28, 28), (25, 26),
+  (29, 31), (30, 31), (32, 32), (32, 33), (29, 30)]
 
 private def color (colors : Array Nat) (d a b : Nat) : Nat :=
   (colors[a*d + b]?).getD 0
@@ -118,6 +164,17 @@ private theorem valid22 : ∀ a b : Fin 22, valid colors22 22 a b := by decide
 set_option maxRecDepth 10000 in
 set_option maxHeartbeats 4000000 in
 private theorem valid27 : ∀ a b : Fin 27, valid colors27 27 a b := by decide
+
+private theorem valid4 : ∀ a b : Fin 4, valid colors4 4 a b := by decide
+
+private theorem valid5 : ∀ a b : Fin 5, valid colors5 5 a b := by decide
+
+private theorem valid6 : ∀ a b : Fin 6, valid colors6 6 a b := by decide
+
+private theorem valid9 : ∀ a b : Fin 9, valid colors9 9 a b := by decide
+
+set_option maxRecDepth 10000 in
+private theorem valid11 : ∀ a b : Fin 11, valid colors11 11 a b := by decide
 
 private def weight : Nat → Nat → Nat
   | 0, k => if accepts k then 1 else 0
@@ -148,19 +205,51 @@ private theorem reads_color (d : Nat) (hd : 0 < d) (colors : Array Nat)
     · rw [← h]
     · rw [← h, Nat.add_comm]
 
+private theorem same_root (d e : Nat) (hd : 1 < d) (he : 1 < e)
+    (cd ce : Array Nat) (vd : ∀ a b : Fin d, valid cd d a b)
+    (ve : ∀ a b : Fin e, valid ce e a b)
+    (root : color cd d 0 1 = color ce e 0 1) (r : Nat) :
+    count d (2^r) = count e (2^r) := by
+  have left := count_block d r 0
+  have right := count_block e r 0
+  simp only [Nat.mul_zero, Nat.zero_add, Nat.mul_one, count] at left right
+  rw [← left, ← right, reads_color d (by omega) cd vd, reads_color e (by omega) ce ve]
+  simp only [Nat.zero_add, stern_zero, stern_one, Nat.zero_mod,
+    Nat.mod_eq_of_lt hd, Nat.mod_eq_of_lt he, root]
+
 set_option maxRecDepth 10000 in
 /-- Reznick's divisibility-count conjecture, for every dyadic prefix. -/
-theorem reznick (r : Nat) : count 22 (2^r) = count 27 (2^r) := by
-  have h22 := count_block 22 r 0
-  have h27 := count_block 27 r 0
-  simp only [Nat.mul_zero, Nat.zero_add, Nat.mul_one, count] at h22 h27
-  rw [← h22, ← h27, reads_color 22 (by decide) colors22 valid22,
-    reads_color 27 (by decide) colors27 valid27]
-  simp only [Nat.zero_add, stern_zero, stern_one]
-  apply congrArg (weight r)
-  decide
+theorem reznick (r : Nat) : count 22 (2^r) = count 27 (2^r) :=
+  same_root 22 27 (by decide) (by decide) colors22 colors27 valid22 valid27 (by decide) r
+
+set_option maxRecDepth 10000 in
+/-- The moduli 4 and 5 in Reznick's equation (15). -/
+theorem four_five (r : Nat) : count 4 (2^r) = count 5 (2^r) :=
+  same_root 4 5 (by decide) (by decide) colors4 colors5 valid4 valid5 (by decide) r
+
+set_option maxRecDepth 10000 in
+/-- The moduli 6 and 9 in Reznick's equation (15). -/
+theorem six_nine (r : Nat) : count 6 (2^r) = count 9 (2^r) :=
+  same_root 6 9 (by decide) (by decide) colors6 colors9 valid6 valid9 (by decide) r
+
+set_option maxRecDepth 10000 in
+/-- The moduli 6 and 11 in Reznick's equation (15). -/
+theorem six_eleven (r : Nat) : count 6 (2^r) = count 11 (2^r) :=
+  same_root 6 11 (by decide) (by decide) colors6 colors11 valid6 valid11 (by decide) r
 
 end SternResidues
 /-- info: 'SternResidues.reznick' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms SternResidues.reznick
+
+/-- info: 'SternResidues.four_five' depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs in
+#print axioms SternResidues.four_five
+
+/-- info: 'SternResidues.six_nine' depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs in
+#print axioms SternResidues.six_nine
+
+/-- info: 'SternResidues.six_eleven' depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs in
+#print axioms SternResidues.six_eleven
