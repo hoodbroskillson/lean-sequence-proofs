@@ -48,10 +48,10 @@ theorem generating_function (n : Nat) :
 
 end A193652
 
-/-- info: 'A193652.closed_form' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'A193652.closed_form' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms A193652.closed_form
 
-/-- info: 'A193652.generating_function' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'A193652.generating_function' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms A193652.generating_function
