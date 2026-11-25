@@ -160,7 +160,7 @@ theorem classification (d e : Nat) (hd : 0 < d) (hlt : d < e) (he : e ≤ 128) :
 
 end SternClassification
 
-/-- info: 'SternClassification.four_depths' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'SternClassification.four_depths' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms SternClassification.four_depths
 
