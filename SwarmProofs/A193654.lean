@@ -160,6 +160,6 @@ end A193654
 #guard_msgs in
 #print axioms A193654.coefficient_identity
 
-/-- info: 'A193654.heading_zero' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'A193654.heading_zero' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms A193654.heading_zero
