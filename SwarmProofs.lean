@@ -1,4 +1,5 @@
 import SwarmProofs.A024220
+import SwarmProofs.DigitWord
 import Mathlib
 import SwarmProofs.ErdosStraus97
 import SwarmProofs.ErdosMoser

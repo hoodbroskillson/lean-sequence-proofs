@@ -1,11 +1,12 @@
 # Lean proofs for integer sequences and number theory
 
-This repository contains machine-checked proofs of two OEIS sequence recurrences, two families of solutions to the Erdős–Straus equation, and a necessary condition for solutions of the Erdős–Moser equation. The general Erdős–Straus and Erdős–Moser conjectures remain open.
+This repository collects machine-checked results about integer sequences, Egyptian fractions, and the Erdős–Moser equation. The general Erdős–Straus and Erdős–Moser conjectures remain open.
 
 ## Theorems
 
 | Problem | What Lean proves | Lean declaration |
 | --- | --- | --- |
+| Base-`b` digit sums | For every base `b ≥ 2` and initial symbol `c`, the unique fixed word of the substitution sending `j` to `j,…,j+b−1` has symbol `c + digitSum_b(n)` at position `n`, starting at zero. [A173527](https://oeis.org/A173527) · [A053828](https://oeis.org/A053828) | [`DigitWord.fixed_iff`](SwarmProofs/DigitWord.lean) |
 | OEIS A027171 | R. J. Mathar’s recurrence in its original indexing, for every `n ≥ 2`. | [`Rec027171.mathar`](SwarmProofs.lean) |
 | OEIS A027171 | A homogeneous recurrence obtained by taking two forward differences. | [`Rec027171.homogeneous`](SwarmProofs.lean) |
 | OEIS A024220 | Mathar’s order-seven recurrence for every index `n ≥ 8`, derived from the defining floor of a quotient of elementary symmetric sums. | [`A024220.recurrence`](SwarmProofs/A024220.lean) |
@@ -34,7 +35,7 @@ lake build
 lake env lean Audit.lean
 ```
 
-The default build checks the proofs and the axiom reports embedded in the three modules under `SwarmProofs/`. The final command checks the axiom reports for `Rec027171.mathar`, `Rec027171.homogeneous`, and `Egypt242.covered`. GitHub Actions runs the build and audit on pushes and pull requests. [Audit.lean](Audit.lean)
+The default build checks the proofs and the axiom reports embedded in the modules under `SwarmProofs/`. The final command checks the axiom reports for `Rec027171.mathar`, `Rec027171.homogeneous`, and `Egypt242.covered`. GitHub Actions runs the build and audit on pushes and pull requests. [Audit.lean](Audit.lean)
 
 ## Provenance
 
