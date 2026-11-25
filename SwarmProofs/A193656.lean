@@ -135,7 +135,7 @@ theorem bisection : ∀ n : Nat, barry (2*n) = term n
 
 end A193656
 
-/-- info: 'A193656.twice_residue' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'A193656.twice_residue' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms A193656.twice_residue
 
