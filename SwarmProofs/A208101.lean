@@ -28,8 +28,8 @@ private theorem ballot_step (n j : Nat) :
   cases j with
   | zero => simp [ballot, Nat.choose_succ_succ] <;> omega
   | succ j =>
-    simp only [ballot, Nat.choose_succ_succ, Int.natCast_add]
-    omega
+    simp only [ballot, Nat.choose_succ_succ, Int.natCast_add, Nat.succ_eq_add_one]
+    ring
 
 private def cell (n k : Nat) : Int :=
   if k % 2 = 0 then ballot n (k/2) else ballot (n+1) (k/2+1)
