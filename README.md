@@ -1,6 +1,6 @@
 # Lean proofs for integer sequences and number theory
 
-This repository contains machine-checked proofs of two OEIS sequence recurrences, two families of solutions to the Erdős–Straus equation, and a necessary condition for solutions of the Erdős–Moser equation. The general Erdős–Straus and Erdős–Moser conjectures remain open.
+This repository collects machine-checked results about integer sequences, Egyptian fractions, and the Erdős–Moser equation. The general Erdős–Straus and Erdős–Moser conjectures remain open.
 
 ## Theorems
 
@@ -10,6 +10,7 @@ This repository contains machine-checked proofs of two OEIS sequence recurrences
 | OEIS A027171 | A homogeneous recurrence obtained by taking two forward differences. | [`Rec027171.homogeneous`](SwarmProofs.lean) |
 | OEIS A024220 | Mathar’s order-seven recurrence for every index `n ≥ 8`, derived from the defining floor of a quotient of elementary symmetric sums. | [`A024220.recurrence`](SwarmProofs/A024220.lean) |
 | Erdős–Straus | For every `n > 2` with `n % 24 ≠ 1`, the rational number `4/n` is a sum of three unit fractions with strictly increasing positive denominators. | [`Egypt242.covered`](SwarmProofs.lean) |
+| Egyptian fractions | For `q ≡ 1 (mod 3)`, `3/q` is a sum of two positive unit fractions exactly when `q²` has a divisor congruent to 2 modulo 3. [Eppstein](https://ics.uci.edu/~eppstein/numth/egypt/smallnum.html) | [`EgyptianDivisor.three_over_iff`](SwarmProofs/EgyptianDivisor.lean) |
 | Erdős–Straus | For every `n = 120k + 97` with `k ≥ 0`, explicit strictly increasing positive denominators give the same unit-fraction identity. Every such `n` is 1 modulo 24. | [`ErdosStraus97.covered`](SwarmProofs/ErdosStraus97.lean) |
 | Erdős–Moser | If positive `m` and even `k ≥ 2` satisfy `1^k + ⋯ + (m−1)^k = m^k`, then `m ≡ 3 (mod 8)`. | [`ErdosMoser.three_mod_eight`](SwarmProofs/ErdosMoser.lean) |
 
@@ -34,7 +35,7 @@ lake build
 lake env lean Audit.lean
 ```
 
-The default build checks the proofs and the axiom reports embedded in the three modules under `SwarmProofs/`. The final command checks the axiom reports for `Rec027171.mathar`, `Rec027171.homogeneous`, and `Egypt242.covered`. GitHub Actions runs the build and audit on pushes and pull requests. [Audit.lean](Audit.lean)
+The default build checks the proofs and the axiom reports embedded in the modules under `SwarmProofs/`. The final command checks the axiom reports for `Rec027171.mathar`, `Rec027171.homogeneous`, and `Egypt242.covered`. GitHub Actions runs the build and audit on pushes and pull requests. [Audit.lean](Audit.lean)
 
 ## Provenance
 
