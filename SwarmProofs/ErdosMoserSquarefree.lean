@@ -58,10 +58,10 @@ theorem predecessor_squarefree (m k : Nat) (hm : 0 < m) (hk : 0 < k)
 end ErdosMoser
 
 /-! Kernel axiom audits for both the generalized result and its classical specialization. -/
-/-- info: 'ErdosMoser.square_divisor_forces_multiplier' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'ErdosMoser.square_divisor_forces_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms ErdosMoser.square_divisor_forces_multiplier
 
-/-- info: 'ErdosMoser.predecessor_squarefree' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'ErdosMoser.predecessor_squarefree' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms ErdosMoser.predecessor_squarefree
