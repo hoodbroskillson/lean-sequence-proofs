@@ -61,6 +61,6 @@ end A208355
 #guard_msgs in
 #print axioms A208355.recurrence
 
-/-- info: 'A208355.header_counterexample' depends on axioms: [propext, Quot.sound] -/
+/-- info: 'A208355.header_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms A208355.header_counterexample
