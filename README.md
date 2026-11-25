@@ -6,6 +6,7 @@ This repository collects machine-checked results about integer sequences, Egypti
 
 | Problem | What Lean proves | Lean declaration |
 | --- | --- | --- |
+| Base-`b` digit sums | For every base `b ≥ 2` and initial symbol `c`, the unique fixed word of the substitution sending `j` to `j,…,j+b−1` has symbol `c + digitSum_b(n)` at position `n`, starting at zero. [A173527](https://oeis.org/A173527) · [A053828](https://oeis.org/A053828) | [`DigitWord.fixed_iff`](SwarmProofs/DigitWord.lean) |
 | OEIS A027171 | R. J. Mathar’s recurrence in its original indexing, for every `n ≥ 2`. | [`Rec027171.mathar`](SwarmProofs.lean) |
 | OEIS A027171 | A homogeneous recurrence obtained by taking two forward differences. | [`Rec027171.homogeneous`](SwarmProofs.lean) |
 | OEIS A024219 | Howroyd’s floor formula and Mathar’s order-five recurrence for every target index `n ≥ 6`, starting from the defining elementary symmetric sums. [A024219](https://oeis.org/A024219) | [`A024219.floorFormula`](SwarmProofs/A024219.lean) · [`A024219.recurrence`](SwarmProofs/A024219.lean) |
