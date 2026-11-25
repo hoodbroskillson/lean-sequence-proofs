@@ -2,6 +2,10 @@
 
 This repository collects machine-checked results about integer sequences, Egyptian fractions, and the Erdős–Moser equation. The general Erdős–Straus and Erdős–Moser conjectures remain open.
 
+## Fibonacci and Beatty proofs
+
+The [research proof index](research/README.md) links the Fibonacci density and unit-group theorems, the sharp Beatty discrepancy bound, and five Wythoff gap classifications. The index includes the exact statements, prior work, and instructions for replaying the Lean 4.8.0 checks.
+
 ## Theorems
 
 | Problem | What Lean proves | Lean declaration |

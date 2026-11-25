@@ -1,0 +1,18 @@
+Lean (version 4.8.0, x86_64-unknown-linux-gnu, commit df668f00e6c0, Release)
+Checking StolarskyRounding
+'StolarskyRounding.no_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking StolarskyCode
+'Stolarsky.code' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking StolarskyGaps
+'Stolarsky.plusNext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stolarsky.plusGaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stolarsky.middleNext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stolarsky.middleGaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stolarsky.minusNext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stolarsky.minusGaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ConsecutiveEnumeration
+'ConsecutiveEnumeration.differences' depends on axioms: [Classical.choice, propext, Quot.sound]
+Checking IndexedWythoffGaps
+'Stolarsky.A387349' depends on axioms: [Classical.choice, propext, Quot.sound]
+'Stolarsky.A387350' depends on axioms: [Classical.choice, propext, Quot.sound]
+'Stolarsky.A387351' depends on axioms: [Classical.choice, propext, Quot.sound]

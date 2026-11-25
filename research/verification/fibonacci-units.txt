@@ -1,0 +1,128 @@
+Lean (version 4.8.0, x86_64-unknown-linux-gnu, commit df668f00e6c0, Release)
+Checking GreedyPrefix
+Checking LucasZeros
+'LucasZeros.equality_at_lucas_pred' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LucasZeros.unbounded_equalities' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking ZeroEnumeration
+'ZeroEnumeration.sparse_recurrence' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking BaseCases
+'LucasZeroSet.small' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking AllZeros
+'LucasZeroSet.all_of_blocks' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LucasPrefixes
+'LucasPrefixes.bound_of_local' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LocalZeck
+'LocalZeck.local_add' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LucasDominance
+'LucasDominance.dominance' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LucasDominance.conjecture_one' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LucasZeroShape
+'LucasZeroShape.zero_of_cut' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LocalCut
+'LocalCut.last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalCut.flat' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LocalCut.first_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LucasZeroBlock
+'LucasZeroBlock.zero_iff' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LucasEqualitySet
+'LucasZeroSet.source' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LucasZeroSet.covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ZeroIndex
+'ZeroEnumeration.block_iff' depends on axioms: [propext, Quot.sound, Classical.choice]
+'ZeroEnumeration.entry_strict' depends on axioms: [propext, Quot.sound, Classical.choice]
+'ZeroEnumeration.source_range' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking CanonicalZeros
+'CanonicalZeros.source_entry' depends on axioms: [Classical.choice, propext, Quot.sound]
+'CanonicalZeros.source_recurrence' depends on axioms: [Classical.choice, propext, Quot.sound]
+Checking FiniteOrder
+'FiniteOrder.lower' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FiniteOrder.upper' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking TailGcd
+'TailGcd.remove_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FinitePeriod
+'FinitePeriod.period2' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FinitePeriod.period5' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FinitePeriod.period7' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FinitePeriod.period19' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking SixPhases
+'SixPhases.divides' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LucasPeriods
+'LucasPeriods.six_iff' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LucasPeriods.characterize' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LucasLeast
+'LucasLeast.source' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LucasLeast.positive' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking PisanoSource
+'PisanoSource.source' depends on axioms: [propext, Quot.sound, Classical.choice]
+'PisanoSource.pisano' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking LucasParity
+'LucasParity.even_period' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LucasParity.source' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking WallTransfer
+'WallTransfer.wall_iff' depends on axioms: [propext, Quot.sound, Classical.choice]
+'WallTransfer.periods' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking WallLift
+'WallLift.lift' depends on axioms: [propext, Quot.sound, Classical.choice]
+'WallLift.alternatives' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking PowerLift
+'PowerLift.faithful' depends on axioms: [propext, Quot.sound, Classical.choice]
+'PowerLift.one_step' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking RootOrders
+'RootOrders.character' depends on axioms: [propext, Quot.sound, Classical.choice]
+'RootOrders.source' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking PrimeBounds
+'PrimeBounds.split' depends on axioms: [propext, Quot.sound, Classical.choice]
+'PrimeBounds.either_period' depends on axioms: [propext, Quot.sound, Classical.choice]
+'PrimeBounds.nonsplit' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking ResidueBounds
+'ResidueBounds.residues' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking PhaseSix
+'PhaseSix.divisible' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking SixPair
+'SixPair.six_iff' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking PeriodDivisor
+'PeriodDivisor.six_divisor' depends on axioms: [propext, Quot.sound, Classical.choice]
+'PeriodDivisor.all_periods' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking Apparition
+'Apparition.source' depends on axioms: [propext, Quot.sound, Classical.choice]
+'Apparition.rank_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking WallResidue
+'WallResidue.criterion' depends on axioms: [propext, Quot.sound, Classical.choice]
+'WallResidue.fibonacci_criterion' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking WallTower
+'WallTower.lifting' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking WallValuation
+'WallValuation.all_powers' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FibonacciLargeFactor
+'FibonacciLargeFactor.unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FibonacciLargeFactor.period' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FibResidueLifts
+'FibResidueBound.lifts' depends on axioms: [Quot.sound, propext, Classical.choice]
+'FibResidueBound.of_period' depends on axioms: [Quot.sound, propext, Classical.choice]
+Checking FibIdentityFiber
+'FibIdentityFiber.lower' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FibRegularLifts
+'FibRegularLifts.all' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking ThreePowersSource
+'ThreePowersSource.powers' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FivePowers
+'FivePowers.div_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FivePowers.source' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FibonacciUnitGroups
+'FibonacciUnitGroups.complete_five' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FibonacciUnitGroups.complete_three' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FibonacciUnitGroups.groups' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FibonacciUnitGroups.infinite' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking TwoPowers
+'TwoPowers.power_fib' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TwoPowers.periods' depends on axioms: [propext, Quot.sound, Classical.choice]
+'TwoPowers.small_periods' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FibCoverObstruction
+'FibCoverObstruction.strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FibCoverObstruction.contradicts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FibCoverObstruction.eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FibonacciTwoUnitGroups
+'FibonacciTwoUnitGroups.all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FibonacciTwoUnitGroups.four_missing' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FibonacciTwoUnitGroups.units' depends on axioms: [propext, Quot.sound, Classical.choice]
+'FibonacciTwoUnitGroups.infinite_incomplete' depends on axioms: [propext, Quot.sound, Classical.choice]

@@ -1,0 +1,12 @@
+Lean (version 4.8.0, x86_64-unknown-linux-gnu, commit df668f00e6c0, Release)
+Checking ArtsteinST
+'ArtsteinST.of_bracket' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FamilyCounterexamples
+'ArtsteinST.P42.witness4' depends on axioms: [propext, Quot.sound, Classical.choice]
+'ArtsteinST.P42.outside_condition' depends on axioms: [propext]
+'ArtsteinST.P42.upper_value' does not depend on any axioms
+'ArtsteinST.P42.witnesses' depends on axioms: [propext, Quot.sound, Classical.choice]
+'ArtsteinST.P73.witness4' depends on axioms: [propext, Quot.sound, Classical.choice]
+'ArtsteinST.P73.outside_condition' depends on axioms: [propext]
+'ArtsteinST.P73.upper_value' does not depend on any axioms
+'ArtsteinST.P73.witnesses' depends on axioms: [propext, Quot.sound, Classical.choice]

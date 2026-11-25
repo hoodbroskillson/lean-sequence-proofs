@@ -1,0 +1,22 @@
+Lean (version 4.8.0, x86_64-unknown-linux-gnu, commit df668f00e6c0, Release)
+Checking FamilyMex
+'MexFamily.bracket' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FamilyWitness
+'MexFamily.Witness.lower_witness' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FamilyCount
+'MexFamily.prefix_decomposition' depends on axioms: [propext, Quot.sound, Classical.choice]
+'MexFamily.compress' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking TurekInvariant
+'MexFamily.FourCuts.characteristic_balanced' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FamilyBalance
+'MexFamily.characteristic' depends on axioms: [propext, Quot.sound, Classical.choice]
+'MexFamily.improved' depends on axioms: [propext, Quot.sound, Classical.choice]
+'MexFamily.nonsharp' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FamilyForward
+'MexFamily.forward' depends on axioms: [propext, Quot.sound, Classical.choice]
+'MexFamily.after_full' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FamilySharpness
+'MexFamily.Extremal.range_attained' depends on axioms: [propext, Quot.sound, Classical.choice]
+'MexFamily.Extremal.attained' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking FamilyRange
+'MexFamily.exact_range' depends on axioms: [propext, Quot.sound, Classical.choice]

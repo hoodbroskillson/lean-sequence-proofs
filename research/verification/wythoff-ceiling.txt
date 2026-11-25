@@ -1,0 +1,37 @@
+Lean (version 4.8.0, x86_64-unknown-linux-gnu, commit df668f00e6c0, Release)
+Checking CeilingBlocks
+Checking StolarskyCode
+'Stolarsky.code' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CeilingShift
+'CeilingWythoff.floorShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CeilingWythoff.floorNext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CeilingWythoff.sourceDigital' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CeilingRows
+'CeilingWythoff.everyRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LeastCarry
+'LeastCarry.first' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LeastCarry.second' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LeastCarry.higher' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking CeilingColumns
+'CeilingWythoff.columnOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CeilingWythoff.columnTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CeilingWythoff.columnHigh' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CeilingMultiplicity
+'CeilingWythoff.rowsStrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CeilingWythoff.repeated_iff' depends on axioms: [propext, Quot.sound, Classical.choice]
+'CeilingWythoff.missing_iff' depends on axioms: [propext, Quot.sound, Classical.choice]
+'CeilingWythoff.singleCases' depends on axioms: [propext, Quot.sound, Classical.choice]
+'CeilingWythoff.atMostTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CeilingOffsetsBridge
+'CeilingBlocks.mem_offsets_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CeilingWitness
+'CeilingBlocks.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CeilingSpacing
+'CeilingBlocks.steps' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking ConsecutiveEnumeration
+'ConsecutiveEnumeration.differences' depends on axioms: [Classical.choice, propext, Quot.sound]
+Checking GapChain
+'GapChain.extract' depends on axioms: [propext, Quot.sound, Classical.choice]
+Checking CeilingFinal
+'CeilingBlocks.A341261' depends on axioms: [Classical.choice, propext, Quot.sound]
+'CeilingBlocks.A341262' depends on axioms: [Classical.choice, propext, Quot.sound]
