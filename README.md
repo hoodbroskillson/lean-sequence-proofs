@@ -9,10 +9,14 @@ This repository collects machine-checked results about integer sequences, Egypti
 | Base-`b` digit sums | For every base `b ≥ 2` and initial symbol `c`, the unique fixed word of the substitution sending `j` to `j,…,j+b−1` has symbol `c + digitSum_b(n)` at position `n`, starting at zero. [A173527](https://oeis.org/A173527) · [A053828](https://oeis.org/A053828) | [`DigitWord.fixed_iff`](SwarmProofs/DigitWord.lean) |
 | OEIS A027171 | R. J. Mathar’s recurrence in its original indexing, for every `n ≥ 2`. | [`Rec027171.mathar`](SwarmProofs.lean) |
 | OEIS A027171 | A homogeneous recurrence obtained by taking two forward differences. | [`Rec027171.homogeneous`](SwarmProofs.lean) |
+| OEIS A024219 | Howroyd’s floor formula and Mathar’s order-five recurrence for every target index `n ≥ 6`, starting from the defining elementary symmetric sums. [A024219](https://oeis.org/A024219) | [`A024219.floorFormula`](SwarmProofs/A024219.lean) · [`A024219.recurrence`](SwarmProofs/A024219.lean) |
 | OEIS A024220 | Mathar’s order-seven recurrence for every index `n ≥ 8`, derived from the defining floor of a quotient of elementary symmetric sums. | [`A024220.recurrence`](SwarmProofs/A024220.lean) |
+| OEIS A286282 | Both of Mathar’s recurrences for Knowlton’s elevator follow from Graham’s published characterization. The fourth-order recurrence holds for `n ≥ 5` and the third-order recurrence for `n ≥ 4`. [A286282](https://oeis.org/A286282) | [`A286282.orderFour`](SwarmProofs/A286282.lean) · [`A286282.orderThree`](SwarmProofs/A286282.lean) |
 | Erdős–Straus | For every `n > 2` with `n % 24 ≠ 1`, the rational number `4/n` is a sum of three unit fractions with strictly increasing positive denominators. | [`Egypt242.covered`](SwarmProofs.lean) |
+| Egyptian fractions | For `q ≡ 1 (mod 3)`, `3/q` is a sum of two positive unit fractions exactly when `q²` has a divisor congruent to 2 modulo 3. [Eppstein](https://ics.uci.edu/~eppstein/numth/egypt/smallnum.html) | [`EgyptianDivisor.three_over_iff`](SwarmProofs/EgyptianDivisor.lean) |
 | Erdős–Straus | For every `n = 120k + 97` with `k ≥ 0`, explicit strictly increasing positive denominators give the same unit-fraction identity. Every such `n` is 1 modulo 24. | [`ErdosStraus97.covered`](SwarmProofs/ErdosStraus97.lean) |
 | Erdős–Moser | If positive `m` and even `k ≥ 2` satisfy `1^k + ⋯ + (m−1)^k = m^k`, then `m ≡ 3 (mod 8)`. | [`ErdosMoser.three_mod_eight`](SwarmProofs/ErdosMoser.lean) |
+| Erdős–Moser | For positive `m` and even `k ≥ 2`, a solution of the power-sum equation satisfies `m % 3 ≠ 0`, as in Moree’s Theorem 2(2). [Moree](https://arxiv.org/abs/1011.2940) | [`ErdosMoser.not_zero_mod_three`](SwarmProofs/ErdosMoserThree.lean) |
 
 ## Sources
 

@@ -47,6 +47,7 @@ theorem fixed_iff (b seed : Nat) (hb : 2 ≤ b) (w : Nat → Nat) :
 
 end DigitWord
 
-/-- info: 'DigitWord.fixed_iff' depends on axioms: [propext, Quot.sound] -/
+-- Exact report from the repository's pinned Lean 4.37.0-rc1 toolchain.
+/-- info: 'DigitWord.fixed_iff' depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs in
 #print axioms DigitWord.fixed_iff
