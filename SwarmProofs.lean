@@ -5,6 +5,7 @@ import SwarmProofs.A286282
 import SwarmProofs.ErdosStraus97
 import SwarmProofs.EgyptianDivisor
 import SwarmProofs.ErdosMoser
+import SwarmProofs.ErdosMoserThree
 
 /- The A027171 diagonal of the A027170 binomial triangle, in integer arithmetic.
    Source: https://oeis.org/A027171 and https://oeis.org/A027170 -/

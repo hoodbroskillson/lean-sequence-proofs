@@ -15,6 +15,7 @@ This repository collects machine-checked results about integer sequences, Egypti
 | Egyptian fractions | For `q ≡ 1 (mod 3)`, `3/q` is a sum of two positive unit fractions exactly when `q²` has a divisor congruent to 2 modulo 3. [Eppstein](https://ics.uci.edu/~eppstein/numth/egypt/smallnum.html) | [`EgyptianDivisor.three_over_iff`](SwarmProofs/EgyptianDivisor.lean) |
 | Erdős–Straus | For every `n = 120k + 97` with `k ≥ 0`, explicit strictly increasing positive denominators give the same unit-fraction identity. Every such `n` is 1 modulo 24. | [`ErdosStraus97.covered`](SwarmProofs/ErdosStraus97.lean) |
 | Erdős–Moser | If positive `m` and even `k ≥ 2` satisfy `1^k + ⋯ + (m−1)^k = m^k`, then `m ≡ 3 (mod 8)`. | [`ErdosMoser.three_mod_eight`](SwarmProofs/ErdosMoser.lean) |
+| Erdős–Moser | For positive `m` and even `k ≥ 2`, a solution of the power-sum equation satisfies `m % 3 ≠ 0`, as in Moree’s Theorem 2(2). [Moree](https://arxiv.org/abs/1011.2940) | [`ErdosMoser.not_zero_mod_three`](SwarmProofs/ErdosMoserThree.lean) |
 
 ## Sources
 
